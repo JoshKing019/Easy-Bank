@@ -3,6 +3,8 @@ const menuClose = document.querySelector('.closeMenu')
 const menu = document.querySelector('.links1')
 const html = document.querySelector('html')
 
+const menuList = document.querySelectorAll('.links1')
+
 menuOpen.addEventListener("click", function(){
     menu.style.top = "270%"
     menuClose.style.display = "block"
@@ -15,6 +17,16 @@ menuClose.addEventListener("click", function(){
     menu.style.top = "-270%"
     menuClose.style.display = "none"
     menuOpen.style.display = 'block'
+    html.style.overflowY = "scroll"
+})
+
+menuList.forEach(link => {
+    link.addEventListener("click", function(){
+        menu.style.top = "-270%"
+        menuClose.style.display = "none"
+        menuOpen.style.display = 'block'
+        html.style.overflowY = "scroll"
+    })
 })
 
 
