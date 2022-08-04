@@ -73,9 +73,11 @@ a{
     font-size: 50px;
     padding-bottom: 20px;
     font-weight: 400;
+    color: var(--Dark-Blue);
 }
 .first2 p{
     padding-bottom: 30px;
+    color: var(--GrayishBlue);
 }
 .first2 a{
     background: linear-gradient( to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
@@ -100,23 +102,28 @@ a{
 
 .Leomessi p{
     font-size: 10px;
+    color: var(--GrayishBlue);
 }
 
 .frank{
     padding:0 10px;
 }
 
-.OBOthegoat h1{
+.OBOthegoat{
     width: 40%;
+}
+
+.OBOthegoat h1{
     font-size: 32px;
     font-weight: 400;
+    color: var(--Dark-Blue);
 }
 
 .OBOthegoat P{
     padding:20px 0 ;
-    width:40%;
     font-size: 12px;
     padding-bottom: 40px;
+    color: var(--GrayishBlue);
 }
 
 .Leomessi img{
@@ -125,6 +132,7 @@ a{
 
 .Leomessi h3{
     padding: 20px 0;
+    color: var(--Dark-Blue);
 }
 
 .first2 p{
@@ -155,6 +163,14 @@ a{
 
 .josh{
     background-color: #fff;
+}
+
+.josh h3{
+    color: var(--Dark-Blue);
+}
+
+.josh p{
+    color: var(--GrayishBlue);
 }
 
 .all1 p{
@@ -260,7 +276,7 @@ a{
 
 @media screen and ( max-width:768px){
     .image1{
-        width: 45%;
+        width: 75%;
     }
   .first2 h1{
     font-size: 38px;
@@ -279,7 +295,35 @@ a{
 }
 
 @media screen and (max-width:576px){
+    #first{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .image1{
+        padding-left: 25px;
+        width: 75%;
+        margin: -10% 25% 0 0;
+    }
+
+    .first2{
+        text-align: center;
+    }
+
+    .OBOthegoat{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+
+
+    .OBOthegoat h1{
+        font-size: 30px;
+        padding-left: 0;
+    }
 
     .navToggle{
         display: block;
@@ -297,7 +341,7 @@ a{
         transform: translate(-50%, -50%);
         background-color: var(--VeryLight-Gray);
         border-radius: 10px;
-        width: 50%;
+        width: 65%;
         text-align: center;
         padding: 2rem;
         display: flex;
@@ -350,30 +394,14 @@ a{
 
 
 @media screen and ( max-width:414px){
-    #first{
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-        justify-content: center;
-    }
 
-    .image1{
-        padding-left: 25px;
-        width: 75%;
-    }
+
+
 
     .OBOthegoat{
         text-align: center;
 } 
 
-.OBOthegoat h1{
-    padding-left: 60px;
-    width: 65%;
-}
-
-.OBOthegoat p{
-    width: 95%;
-}
 
 .Leomessi{
     display: flex;
@@ -432,15 +460,6 @@ a{
     .OBOthegoat{
         text-align: center;
 
-    }
-
-    .OBOthegoat h1{
-        padding-left: 60px;
-        width: 65%;
-    }
-
-    .OBOthegoat p{
-        width: 95%;
     }
 
     #messi30 h4{
